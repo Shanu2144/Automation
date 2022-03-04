@@ -138,7 +138,7 @@ npm  install -g appium
 
 **👉Make sure all the packages inside the project interpreter are installed:-**
  - To verify follow the path
- - <a href="#"> <img alt="pycharm" src= "https://img.shields.io/badge/Open-PyCharm-lightgrey">
+ - <a href="#"> <img alt="pycharm" src= "https://img.shields.io/badge/Open-PyCharm-lightgrey"></a>
  > File>Settings>Project interpreter
 	
  > ![image](https://user-images.githubusercontent.com/87467505/156704202-eb554be0-ab4f-48de-938b-6f266bbd1e2f.png)
