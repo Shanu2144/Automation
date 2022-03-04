@@ -178,7 +178,7 @@ ${URL}  http://172.16.52.125:4723/wd/hub
 *** Test Cases ***
 TC_01- User should be able to login with multiple user
   [Tags]  Login
-  [Documentation]  This testcase will purchase the package of private lessions.
+  [Documentation]  This Test Case will fetch username and password for multiple users from Excel File
   ${username_text}=      Read_Element_Locator  Login.username_textbox_xpath    ../JsonFiles/Login.json
   ${password_text}=      Read_Element_Locator  Login.password_textbox_xpath    ../JsonFiles/Login.json
 
