@@ -1,19 +1,21 @@
-<h1 align="center">  Automation </h1>
+<h1 align="center"><img src="https://i.giphy.com/media/zbzuZgxt23h8ywu7Bm/giphy.webp" height=35> Automation <img src= "https://i.giphy.com/media/3TdV1b87lcbv3SDoa3/giphy.webp" height =35 </h1>
 <h1 align="center">**Robot Framework for Mobile UI Automation** </h1>
 
-  ***Introduction:-***
+   :sassy_man: ***Introduction:-***
    - Robot Framework is a test automation framework that makes it easy for QA teams to manage acceptance testing and acceptance test-driven development (ATDD).
    - It has simple plain text syntax and it can be extended easily with libraries implemented using Python or Java.
   
-   - See ```https://robotframework.org/``` for Robot Framework home page
+   - See <a href="https://robotframework.org/"><img alt="GitHub" src="https://img.shields.io/badge/ROBOT-Framework-red"></a>   for Robot Framework home page
 
 **Who is this repository for?**
  - This repository is for newbies to Robot Framework interested in automating the mobile UI.
 ##  🛠️ Installation
 
 **👉Install python with PIP:-**
- - Visit the below website to download Python for your operating system.
-                       ```https://www.python.org/downloads/```
+ - Click on Logo to download Python for your operating system.<a href="https://www.python.org/downloads/" target="_blank">
+    <img alt="Python" src="https://img.shields.io/badge/Python%20-%2314354C.svg?style=plastic&logo=python&logoColor=white">
+  </a>
+                       
  - You can click on ‘Install Now' to install the default package. It comes with pip, IDLE, and documentation.
  - Select option ‘Add Python <version> to PATH'that will automatically update the path of Python in environment variables.
  - After installation check if Python and pip are correctly installed open the command prompt, and run the below command.
@@ -29,18 +31,20 @@
                     & save it.
 
 **👉Install Java jdk**
- - Search java jdk,
-                LINK TO DOWNLOAD: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+ - Search java jdk,<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank"> 
+    <img alt="Java" src="https://img.shields.io/badge/Java-%23007396.svg?style=plastic&logo=java&logoColor=white">
+  </a>
+	
  - Install it & add to environment Variable, 
    - Add new System variable with name JAVA\_HOME & 
                  Paste                  
-                 ```
+                 `
                  C:\Program Files\Java\jdk1.8.0\_27 
-                 ``` ,
+                 ` ,
                  & 
-                 ```
+                 `
                  C:\Program Files\Java\jdk1.8.0\_271\bin
-                 ``` .
+                 ` .
  - After installation check if java is correctly installed open the command prompt, and run the below command.
 ```
     java -version
@@ -49,11 +53,13 @@
 **👉Install node js**
  - Search node js,
  - Click on PATH in system variable & add
-   - ```C:\Program Files\nodejs```
-   - ```C:\Program Files\nodejs\node\_modules```
-   - ```C:\Program Files\nodejs\node\_modules\npm```
+   - `C:\Program Files\nodejs`
+   - `C:\Program Files\nodejs\node\_modules`
+   - `C:\Program Files\nodejs\node\_modules\npm`
  - After installation check if node js is correctly installed open the command prompt, and run the below command.
-		        ```node -v```
+```
+	node -v
+```
 
 **👉Install appium:-**
  - In cmd type 
@@ -79,32 +85,32 @@ npm  install -g appium
 ```
 
 **👉Install appium standalone application:**
- - Download standalone application appium
-		LINK TO DOWNLOAD:```https://github.com/appium/appium-desktop/releases/tag/v1.20.2```, 
-           OR DOWNLOAD THE LATEST ONE ```https://github.com/appium/appium-desktop/releases/latest```
+ - Download standalone application appium  <a href="https://github.com/appium/appium-desktop/releases/tag/v1.20.2"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
+	
+	OR DOWNLOAD THE LATEST ONE <a href="https://github.com/appium/appium-desktop/releases/latest"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
 
 **👉Install Android studio:-**
- - You can Install full package if want to create emulator to run application
-                LINK TO DOWNLOAD: ```https://developer.android.com/studio```
+ - You can Install full package if want to create emulator to run application <a href="https://developer.android.com/studio"><img alt="AndriodStudioDownload" src="https://img.shields.io/badge/Andriod%20Studio-Download%20link-blue"></a>
+ 
  - After installation add environment variable to path--->
     - create new in user variable  & name it ANDROID\_HOME
-    - copy path ```C:\Users\username\AppData\Local\Android\Sdk``` & paste it.
+    - copy path `C:\Users\username\AppData\Local\Android\Sdk` & paste it.
  - Go to PATH in system variable  & add these paths in it:
-    - ```C:\Users\username\AppData\Local\Android\Sdk\platforms```
-    - ```C:\Users\username\AppData\Local\Android\Sdk\platform-tools```
-    - ```C:\Program Files\Android\Android Studio\bin```
-    - ```C:\Users\username\AppData\Local\Android\Sdk\tools\bin```
-    - ```C:\Users\username\AppData\Local\Android\Sdk\emulator```
-    - ```C:\Users\username\AppData\Local\Android\Sdk\build-tools  to execute commands inside this folder```
+    - `C:\Users\username\AppData\Local\Android\Sdk\platforms`
+    - ```C:\Users\username\AppData\Local\Android\Sdk\platform-tools`
+    - `C:\Program Files\Android\Android Studio\bin`
+    - `C:\Users\username\AppData\Local\Android\Sdk\tools\bin`
+    - `C:\Users\username\AppData\Local\Android\Sdk\emulator`
+    - `C:\Users\username\AppData\Local\Android\Sdk\build-tools  to execute commands inside this folder`
 
 
 **👉Installation of IDE**
  * Pycharm with intellibot plugin
-    - Navigate to ```https://www.jetbrains.com/pycharm/download/``` and download it.
+    - Navigate to `https://www.jetbrains.com/pycharm/download/` and download it.
     - Click next to install and select checkbox for Create 64-bit shortcut on Desktop.
     - Go to File>>Settings>>Plugins and  search for intellibot and install IntelliBot, Robot Framework Support plugin.
  * Eclipse download
-    - Navigate to ```https://www.eclipse.org/downloads/``` and download Eclipse Integration with RobotFramework and RED
+    - Navigate to `https://www.eclipse.org/downloads/` and download Eclipse Integration with RobotFramework and RED
     - Open Eclipse, Goto Help >> Eclipse Marketplace
     - Search for RED, you will get RED Editor for RobotFramework, Install this and restart the eclipse
 
@@ -152,8 +158,15 @@ npm  install -g appium
  - _Setting section_ contains all the required libraries that are required by the test
 ```
 *** Settings ***
+
 Library        AppiumLibrary
-Resource       ../../Resources/Library.robot
+Resource       ../Resources/Library.robot
+
+
+Test Setup       User_open_application
+Test Teardown    User_close_application
+
+Documentation   Test Cases for Login from Excel
 ```
  - Variables are used to hold a value, which can be used in test cases
 ```
@@ -163,27 +176,23 @@ ${URL}  http://172.16.52.125:4723/wd/hub
     
 ```
 *** Test Cases ***
-[Documentation]  Test Cases for Login module
-TC\_001- Application start and close						//Testcase name
-[Tags]  Regression								//User defined tagging for the particular testcase.
-Given user\_open\_application    						//User defined global keyword maintained in library.robot file
-${username\_text} =    Read\_Element\_Locator  Login.username\_textbox\_xpath		//User defined keyword to fetch the keyvalue through the jsonpath
-${paswword\_text} =    Read\_Element\_Locator  Login.password\_textbox\_xpath		//User defined keyword to fetch the keyvalue through the jsonpath
-${send\_button} =      Read\_Element\_Locator  Login.login\_button\_id			//User defined keyword to fetch the keyvalue through the jsonpath
-${account\_section} =  Read\_Element\_Locator  Login.account\_button\_xpath		//User defined keyword to fetch the keyvalue through the jsonpath
-${logout} =           Read\_Element\_Locator  Login.logout\_xpath			//User defined keyword to fetch the keyvalue through the jsonpath
-${rows}=              Read\_Number\_Of\_Rows  validlogin				//User defined keyword to fetch the value from the particular row through the excel sheet
-FOR  ${i}  IN RANGE  1  ${rows}+1						//Using loop to iterate the value through the different rows
-${username}=  Read\_Excel\_Data\_Of\_Cell  validlogin  ${i}  1			//User defined keyword to fetch the value from the particular row through the excel sheet
-${password}=  Read\_Excel\_Data\_Of\_Cell  validlogin  ${i}  2			//User defined keyword to fetch the value from the particular row through the excel sheet
-When Input Text  xpath=${username\_text}  ${username}				//Feeding the data in the username input field through the excel sheet
-When Input Text  xpath=${paswword\_text}  ${password}				//Feeding the data in the password input field through the excel sheet
-When click element  id=${send\_button}					//Clicking on the send button
-when wait until page contains element  xpath=${account\_section}  20		//Using waits
-When capture page screenshot  D:/pycharm/PyCharm Community Edition 2019.3.4/robotautomation/snapshot/TC\_001.png 		//Capturing the screenshot
-When Click Element  xpath=${account\_section}				//Click on the account section
-When Click Element  xpath=${logout}					//Clicking on the logout button
-Then user\_close\_application							//User defined global keyword maintained in library.robot file
+TC_01- User should be able to login with multiple user
+  [Tags]  Login
+  [Documentation]  This testcase will purchase the package of private lessions.
+  ${username_text}=      Read_Element_Locator  Login.username_textbox_xpath    ../JsonFiles/Login.json
+  ${password_text}=      Read_Element_Locator  Login.password_textbox_xpath    ../JsonFiles/Login.json
+
+
+  wait until page contains element    xpath=${username_text}    25
+  ${row}  Read_Number_Of_Rows    validlogin
+  FOR    ${i}    IN RANGE    1    ${row}+1
+    ${username}    Read_Excel_Data_Of_Cell    validlogin    ${i}    1
+    ${password}    Read_Excel_Data_Of_Cell    validlogin    ${i}    2
+    input text   ${username_text}   ${username}
+    input text   ${password_text}   ${password}
+    Login_Button
+    Logout_User
+  END
 ```
 
 
@@ -191,11 +200,11 @@ Then user\_close\_application							//User defined global keyword maintained in 
 - Running tests:
  - Tests are executed from the command line using the robot command
 ```
-    robot <Foldername>/<TestName>.robot
+    robot -r ./Report/Report.html -o ./Report/Output.xml -l ./Report/logs.html <Foldername>/<TestName>.robot
 ```
 For Ex: 
 ```
-    robot TC_001- Application start and close.robot
+    robot -r ./Report/Report.html -o ./Report/Output.xml -l ./Report/logs.html TC_001- Application start and close.robot
 ```
 - Generated results:
  - After running tests you will get report and log in HTML format.
