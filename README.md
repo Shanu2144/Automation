@@ -5,7 +5,7 @@
    - Robot Framework is a test automation framework that makes it easy for QA teams to manage acceptance testing and acceptance test-driven development (ATDD).
    - It has simple plain text syntax and it can be extended easily with libraries implemented using Python or Java.
   
-   - See <a href="https://robotframework.org/"><img alt="GitHub" src="https://img.shields.io/badge/ROBOT-Framework-red"></a>   for Robot Framework home page
+   - See <a href="https://robotframework.org/"><img alt="GitHub" src="https://img.shields.io/badge/ROBOT-Framework-red"></a>   for entering into homepage and some more details.
 
 **Who is this repository for?**
  - This repository is for newbies to Robot Framework interested in automating the mobile UI.
@@ -30,7 +30,7 @@
                     ```D:\Python\``` , ``` D:\Python\Scripts\``` , ``` D:\Python\Lib\site-packages\robot```, ```D:\Python\Tools ```
                     & save it.
 
-**👉Install Java jdk**
+**👉Install Java jdk:-**
  - Search java jdk,<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank"> 
     <img alt="Java" src="https://img.shields.io/badge/Java-%23007396.svg?style=plastic&logo=java&logoColor=white">
   </a>
@@ -50,12 +50,15 @@
     java -version
 ```
 
-**👉Install node js**
+**👉Install node js:-**
  - Search node js,
  - Click on PATH in system variable & add
-   - `C:\Program Files\nodejs`
-   - `C:\Program Files\nodejs\node\_modules`
-   - `C:\Program Files\nodejs\node\_modules\npm`
+   > `C:\Program Files\nodejs`
+	
+   > `C:\Program Files\nodejs\node\_modules`
+	
+   > `C:\Program Files\nodejs\node\_modules\npm`
+	
  - After installation check if node js is correctly installed open the command prompt, and run the below command.
 ```
 	node -v
@@ -84,33 +87,40 @@ npm  install -g appium
     pip install robotframework appium library
 ```
 
-**👉Install appium standalone application:**
+**👉Install appium standalone application:-**
  - Download standalone application appium  <a href="https://github.com/appium/appium-desktop/releases/tag/v1.20.2"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
 	
 	OR DOWNLOAD THE LATEST ONE <a href="https://github.com/appium/appium-desktop/releases/latest"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
 
 **👉Install Android studio:-**
- - You can Install full package if want to create emulator to run application <a href="https://developer.android.com/studio"><img alt="AndriodStudioDownload" src="https://img.shields.io/badge/Andriod%20Studio-Download%20link-blue"></a>
+ - You can Install full package and also you can create emulator to run application. <a href="https://developer.android.com/studio"><img alt="AndriodStudioDownload" src="https://img.shields.io/badge/Andriod%20Studio-Download%20link-blue"></a>
  
  - After installation add environment variable to path--->
     - create new in user variable  & name it ANDROID\_HOME
     - copy path `C:\Users\username\AppData\Local\Android\Sdk` & paste it.
  - Go to PATH in system variable  & add these paths in it:
-    - `C:\Users\username\AppData\Local\Android\Sdk\platforms`
-    - ```C:\Users\username\AppData\Local\Android\Sdk\platform-tools`
-    - `C:\Program Files\Android\Android Studio\bin`
-    - `C:\Users\username\AppData\Local\Android\Sdk\tools\bin`
-    - `C:\Users\username\AppData\Local\Android\Sdk\emulator`
-    - `C:\Users\username\AppData\Local\Android\Sdk\build-tools  to execute commands inside this folder`
+    >  `C:\Users\username\AppData\Local\Android\Sdk\platforms`
+	
+    >  `C:\Users\username\AppData\Local\Android\Sdk\platform-tools`
+	
+    >  `C:\Program Files\Android\Android Studio\bin`
+	
+    >  `C:\Users\username\AppData\Local\Android\Sdk\tools\bin`
+	
+    >  `C:\Users\username\AppData\Local\Android\Sdk\emulator`
+	
+    >  `C:\Users\username\AppData\Local\Android\Sdk\build-tools`
+	
+	to execute commands inside this folder
 
 
-**👉Installation of IDE**
+**👉Installation of IDE:-**
  * Pycharm with intellibot plugin
-    - Navigate to `https://www.jetbrains.com/pycharm/download/` and download it.
+    - Navigate to <a href="https://www.jetbrains.com/pycharm/download/"><img alt="Pycharm" src="https://img.shields.io/badge/PyCharm-and%20Download%20it-black"></a>  in your system.
     - Click next to install and select checkbox for Create 64-bit shortcut on Desktop.
     - Go to File>>Settings>>Plugins and  search for intellibot and install IntelliBot, Robot Framework Support plugin.
  * Eclipse download
-    - Navigate to `https://www.eclipse.org/downloads/` and download Eclipse Integration with RobotFramework and RED
+    - Navigate to <a href="https://www.eclipse.org/downloads/"><img alt="Eclipse" src="https://img.shields.io/badge/Eclipse-Download%20link-brightgreen"></a> to download Eclipse Integration with RobotFramework and RED
     - Open Eclipse, Goto Help >> Eclipse Marketplace
     - Search for RED, you will get RED Editor for RobotFramework, Install this and restart the eclipse
 
@@ -120,16 +130,18 @@ npm  install -g appium
 
 
 
-**👉Libraries Installation**
+**👉Libraries Installation:-**
  - Open Command Prompt (cmd) and run the below command.
 ```
     pip install robotframework
 ```
 
-**Make sure all the packages inside the project interpreter are installed**
+**👉Make sure all the packages inside the project interpreter are installed:-**
  - To verify follow the path
-                    File>Settings>Project interpreter
-    - ![image](https://user-images.githubusercontent.com/87467505/156704202-eb554be0-ab4f-48de-938b-6f266bbd1e2f.png)
+ - <a href="#"> <img alt="pycharm" src= "https://img.shields.io/badge/Open-PyCharm-lightgrey">
+ > File>Settings>Project interpreter
+	
+ > ![image](https://user-images.githubusercontent.com/87467505/156704202-eb554be0-ab4f-48de-938b-6f266bbd1e2f.png)
 
 ## 1. What exactly in it?
  * Introduces the basic Robot Framework syntax, how tests are executed, and how logs and reports look like
