@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://i.giphy.com/media/zbzuZgxt23h8ywu7Bm/giphy.webp" height=35> Automation <img src= "https://i.giphy.com/media/3TdV1b87lcbv3SDoa3/giphy.webp" height =35 </h1>
+<h1 align="center"><img src="https://i.giphy.com/media/zbzuZgxt23h8ywu7Bm/giphy.webp" height=35> Automation <img src= "https://i.giphy.com/media/3TdV1b87lcbv3SDoa3/giphy.webp" height =35> </h1>
 <h1 align="center">  :robot: Robot Framework for Mobile UI Automation :robot: </h1>
 
    :sassy_man: ***Introduction:-***
@@ -17,7 +17,7 @@
   </a>
                        
  - You can click on ‘Install Now' to install the default package. It comes with pip, IDLE, and documentation.
- - Select option ‘Add Python <version> to PATH'that will automatically update the path of Python in environment variables.
+ - Select option ‘Add Python <version> to PATH that will automatically update the path of Python in environment variables.
  - After installation check if Python and pip are correctly installed open the command prompt, and run the below command.
 ```
     python --version
@@ -26,7 +26,7 @@
     pip --version 
 ```
     
- - If in condition the path is not set then go to enviornment variables then click on PATH in user & system variable both & add
+ - If in condition the path is not set then go to environment variables then click on PATH in user & system variable both & add
                     ```D:\Python\``` , ``` D:\Python\Scripts\``` , ``` D:\Python\Lib\site-packages\robot```, ```D:\Python\Tools ```
                     & save it.
 
@@ -151,14 +151,14 @@ npm  install -g appium
      - 2. Robot Referenced Libraries : These are external Libraries installed by pip.
  * Folders
    - a) External keywords : This section is used to set up the common functions which will be used throughout the framework like locators,swipe  etc.
-   - b) Resources: This section is used to set up all the global level parameters which will be used throughout the framework like libraray etc.
+   - b) Resources: This section is used to set up all the global level parameters which will be used throughout the framework like library etc.
    - c) Test cases: This section is where all the tests are automated.
      * Package is created with name RegressionSuite and all the tests are automated in it.
      * For Ex: Under Test cases directory we have sub directory called RegressionSuite.
      * and under RegressionSuite we have tests Mobile UI with the following tests are mentioned below
     ![image](https://user-images.githubusercontent.com/87467505/156704646-376e46d6-b993-43ed-8266-22eb0f2f45b1.png)
   - d) TestData: This section will contain stored test data in form of json or excel which will be used by our test.
-  - f) Json files: This section contains json file which contains all locators in the form of keyvalue pair.
+  - f) Json files: This section contains json file which contains all locators in the form of key value pair.
     * For Ex. Elements.json
   - g) Report: This section contains report.html and log.html file stored in it.
   - h) Snapshots: This section contains all the screenshots which are taken on testcases pass and fail condition.
@@ -195,41 +195,62 @@ TC_01- User should be able to login with multiple user
   ${password_text}=      Read_Element_Locator  Login.password_textbox_xpath    ../JsonFiles/Login.json
 
 
-  wait until page contains element    xpath=${username_text}    25
-  ${row}  Read_Number_Of_Rows    validlogin
-  FOR    ${i}    IN RANGE    1    ${row}+1
-    ${username}    Read_Excel_Data_Of_Cell    validlogin    ${i}    1
-    ${password}    Read_Excel_Data_Of_Cell    validlogin    ${i}    2
+  ${row}  Read_Number_Of_Rows    validlogin    ../TestData/TestData.xlsx
+    FOR    ${i}    IN RANGE    1    ${row}+1
+    ${username}    Read_Excel_Data_Of_Cell    validlogin    ${i}    1    ../TestData/TestData.xlsx
+    ${password}    Read_Excel_Data_Of_Cell    validlogin    ${i}    2    ../TestData/TestData.xlsx
     input text   ${username_text}   ${username}
     input text   ${password_text}   ${password}
     Login_Button
     Logout_User
   END
+
 ```
 
 
 
 - Running tests:
- - Tests are executed from the command line using the robot command
+  - Tests are executed from the command line using the robot command
+> Run Full file: 
 ```
-    robot -r ./Report/Report.html -o ./Report/Output.xml -l ./Report/logs.html <Foldername>/<TestName>.robot
+	robot -T Framework.robot/ robot Framework.robot
 ```
-For Ex: 
+	
+   > Run specific Test Case : 
+	
 ```
-    robot -r ./Report/Report.html -o ./Report/Output.xml -l ./Report/logs.html TC_001- Application start and close.robot
+	robot -t "TestCaseName" FileName
 ```
+	
+Ex: ` robot -t "TC_01- User purchased the package of private lessions" Framework.robot`
+	
+ > Run with Tags :
+	
+```
+	robot -i  TagName  FileName
+```
+Ex: `robot -i  Packages  Framework.robot`
+	
+> For Reporting :
+	
+```
+    robot -r ../Report/Report.html -o ../Report/Output.xml -l ../Report/logs.html <Foldername>/<TestName>.robot
+```
+	
+Ex: `robot -r ../Report/Report.html -o ../Report/Output.xml -l ../Report/logs.html Framework.robot`
+	
+> Run Particular TestCases in a Folder: 
+	
+```
+    robot -s "TestsuiteName" FolderName
+```
+	
+Ex: ` robot -s "TC_001.robot" TestCases`
+	
 - Generated results:
- - After running tests you will get report and log in HTML format.
-   - 1. ```report.html```
-   - 2. ```log.html```
+  - After running tests you will get report and log in HTML format.
+    - 1.`report.html`
+    - 2.`log.html`
+    - 3.`output.xml`
 
 <h1 align="center">  Thank you :blush:   </h1>
-
-
-
-
-
-
-
-
-
